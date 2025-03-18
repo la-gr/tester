@@ -28,8 +28,7 @@ io.on('connection', (socket) => {
     });
 });
 
-const PORT = 5000;
-server.listen(PORT, '0.0.0.0', () => {
-    console.log(`Server running at http://185.199.111.153:${PORT}`);
+server.listen(3000, () => {
+    console.log(`Server running at http://localhost:3000`);
 });
 
