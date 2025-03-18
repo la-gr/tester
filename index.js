@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 import { Server } from "socket.io";
 
+//const PORT = process.env.PORT || 3000;
 
 const app = express();
 const server = createServer(app);
