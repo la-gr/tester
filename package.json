@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "node index.js",
-    "build": "netlify deploy --prod",
+    "build": "netlify deploy --prod"
   },
   "main": "index.js",
   "repository": {
