@@ -1,4 +1,4 @@
-// This runs in the browser when serv.html is loaded
+// This runs in the browser when index.html is loaded
 const socket = io();
 
 const form = document.getElementById('form');

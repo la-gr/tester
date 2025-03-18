@@ -1,4 +1,4 @@
-//serv.js
+//index.js
 /*
 import express from 'express';
 import { createServer } from 'node:http';
@@ -16,11 +16,11 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 app.use(express.static(join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
-    res.sendFile(join(__dirname, 'public', 'index.html'));
+    res.sendFile(join(__dirname, 'public', 'ser.html'));
 });
 
 app.get('/serv', (req, res) => {
-    res.sendFile(join(__dirname, 'public', 'serv.html'));
+    res.sendFile(join(__dirname, 'public', 'index.html'));
 });
 
 io.on('connection', (socket) => {
@@ -52,9 +52,9 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 // Serve static files (HTML, CSS, JS) from the "public" folder
 app.use(express.static(join(__dirname, 'public')));
 
-// Route for serv.html
-app.get('/serv', (req, res) => {
-    res.sendFile(join(__dirname, 'public', 'serv.html'));
+// Route for index.html
+app.get('/index', (req, res) => {
+    res.sendFile(join(__dirname, 'public', 'index.html'));
 });
 
 // Handle WebSocket connections
