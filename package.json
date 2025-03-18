@@ -8,6 +8,19 @@
     "socket.io": "^4.8.1"
   },
   "scripts": {
-    "start": "node index.js"
-  }
+    "start": "node index.js",
+    "build": "netlify deploy --prod",
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/la-gr/tester.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/la-gr/tester/issues"
+  },
+  "homepage": "https://github.com/la-gr/tester#readme"
 }
