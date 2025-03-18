@@ -31,6 +31,6 @@ io.on('connection', (socket) => {
 
 const PORT = 7000;
 server.listen(PORT, '0.0.0.0', () => {
-    console.log(`Server running at http://52.220.155.145${PORT}`);
+    console.log(`Server running at http://52.220.155.145:${PORT}`);
 });
 
