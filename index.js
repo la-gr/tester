@@ -12,6 +12,8 @@ const io = new Server(server);
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
+app.use(express.static(join(__dirname, 'public')));
+
 app.get('/', (req, res) => {
     res.sendFile(join(__dirname, 'index.html'));
 });
@@ -26,7 +28,8 @@ io.on('connection', (socket) => {
     });
 });
 
-server.listen(3000, '0.0.0.0', () => {
-    console.log('server running at https://la-gr.github.io/tester/:3000');
+const PORT = 3000;
+server.listen(PORT, '0.0.0.0', () => {
+    console.log(`Server running at http://185.199.108.153:${PORT}`);
 });
 
