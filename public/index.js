@@ -1,8 +1,10 @@
+//index.js
+
 window.onload = function () {
     let but = document.getElementById("but");
     if (but) {
         but.onclick = function () {
-            window.location.href = "serv.html";
+            window.location.href = "/serv"; // Redirects to serv.html
         };
     }
 };
